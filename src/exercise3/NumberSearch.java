@@ -4,19 +4,18 @@ import java.util.Scanner;
 
 public class NumberSearch {
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-      int counter = 0;
-      for (int num = 100; num <= 1000; num++) {
-        if (num % 5 == 0 && num % 6 == 0) {
-          counter++;
-          if ( counter % 10 == 0) {
-            System.out.println(num);
-          }else {
-            System.out.println(num + " ");
-          }
+  public static void main(String[] args) {
+    int counter = 0; 
+    for (int number = 100; number <= 1000; number++) {
+      if (number % 5 == 0 && number % 6 == 0) {
+        counter++;
+
+        if (counter % 10 == 0) {
+          System.out.println(number);
+        } else {
+          System.out.print(number + " ");
         }
       }
     }
-
+  }
 }
